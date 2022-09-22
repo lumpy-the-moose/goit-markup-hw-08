@@ -1,0 +1,29 @@
+.contacts-footer {
+  width: 231px;
+  margin-top: 20px;
+
+  font-style: normal;
+
+  &__gmaps-link {
+    color: $color-white;
+  }
+}
+
+.contacts-footer__item {
+  display: flex;
+
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+.contacts-footer__link {
+  color: $color-white-op;
+
+  transition: color $duration $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $color-white;
+  }
+}

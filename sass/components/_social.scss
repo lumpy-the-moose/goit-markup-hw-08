@@ -1,0 +1,34 @@
+.social {
+  display: flex;
+
+  &__icon {
+    fill: currentColor;
+  }
+}
+
+.social__item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.social__icon-box {
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+  color: $color-icon;
+
+  transition: background-color $duration $timing-function, color $duration $timing-function;
+
+  &--dark {
+    background-color: $color-white-overlay;
+    color: $color-white;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $color-accent;
+    color: $color-white;
+  }
+}

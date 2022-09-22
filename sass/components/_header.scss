@@ -1,0 +1,8 @@
+.header {
+  border-bottom: 1px solid $color-header-border;
+
+  &__container {
+    display: flex;
+    min-height: 80px;
+  }
+}

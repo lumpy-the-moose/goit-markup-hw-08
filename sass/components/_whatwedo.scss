@@ -1,0 +1,47 @@
+.whatwedo {
+  &__section {
+    padding-top: 0;
+  }
+
+  &__title {
+    margin-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__overlay {
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    min-height: 70px;
+    padding: 27px 15px;
+
+    background-color: $color-whatwedo-overlay;
+  }
+
+  &__text {
+    color: $color-white;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.whatwedo__item {
+  position: relative;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}

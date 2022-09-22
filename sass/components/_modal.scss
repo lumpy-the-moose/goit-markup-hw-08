@@ -1,0 +1,72 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  min-width: 528px;
+  min-height: 581px;
+  padding: 40px;
+
+  background-color: $color-white;
+  box-shadow: 0px 1px 3px #0000001f, 0px 1px 1px #00000024, 0px 2px 1px #00000033;
+  border-radius: 4px;
+
+  transform: translate(-50%, -50%);
+
+  &--close-anim {
+    animation: jumpOut $duration-longer $timing-function-longer;
+  }
+}
+
+.modal__button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 30px;
+  height: 30px;
+  padding: 0;
+
+  cursor: pointer;
+
+  background-color: transparent;
+  border: 1px solid $color-modal-close;
+  border-radius: 50%;
+
+  transition: fill $duration $timing-function;
+
+  &:hover,
+  &:focus {
+    fill: $color-accent;
+  }
+}
+
+.modal__backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+
+  background-color: $color-modal-overlay;
+
+  visibility: hidden;
+  pointer-events: none;
+
+  &--visible {
+    visibility: visible;
+    pointer-events: auto;
+
+    animation: fadeIn $duration $timing-function;
+  }
+
+  &--close-anim {
+    animation: fadeOut $duration-longer $timing-function-longer;
+  }
+}

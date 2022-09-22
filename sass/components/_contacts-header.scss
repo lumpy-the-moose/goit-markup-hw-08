@@ -1,0 +1,35 @@
+.contacts-header {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+
+  &__icon {
+    margin-right: 10px;
+
+    fill: currentColor;
+  }
+}
+
+.contacts-header__item {
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.contacts-header__link {
+  display: flex;
+  align-items: center;
+
+  color: $color-secondary-text;
+
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  transition: color $duration $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $color-accent;
+  }
+}

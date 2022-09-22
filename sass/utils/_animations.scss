@@ -1,0 +1,31 @@
+@keyframes fadeIn {
+  0% {
+    transform: scale(2);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes jumpOut {
+  0% {
+    transform: translate(-50%, -50%) scale(1, 1);
+  }
+  20% {
+    transform: translate(-50%, -35%) scale(1.25, 0.8);
+  }
+  100% {
+    transform: translate(-50%, -200%) scale(0.5, 2);
+  }
+}

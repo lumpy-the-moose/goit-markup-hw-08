@@ -1,0 +1,35 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: $color-primary-background;
+
+  &__container {
+    display: flex;
+    align-items: baseline;
+  }
+
+  &__logo {
+    color: $color-white;
+  }
+
+  &__title {
+    color: $color-white;
+
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    margin-bottom: 20px;
+  }
+}
+
+.footer__item {
+  &:nth-child(1) {
+    margin-right: 70px;
+  }
+
+  &:nth-child(2) {
+    margin-right: 93px;
+  }
+}
