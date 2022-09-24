@@ -11,7 +11,6 @@
 
   function openModal() {
     refs.backdrop.classList.add('modal__backdrop--visible');
-    document.body.style.overflow = 'hidden';
   }
   function closeModal() {
     setTimeout(() => refs.backdrop.classList.remove('modal__backdrop--visible'), 500);
@@ -19,6 +18,5 @@
     setTimeout(() => refs.modal.classList.remove('modal--close-anim'), 500);
     refs.backdrop.classList.add('modal__backdrop--close-anim');
     refs.modal.classList.add('modal--close-anim');
-    document.body.style.overflow = 'auto';
   }
 })();

@@ -2,6 +2,7 @@
   &__list {
     @media screen and (min-width: 768px) {
       display: flex;
+      flex-wrap: wrap;
     }
   }
 
@@ -30,12 +31,28 @@
 
 .features__item {
   @media screen and (max-width: 767px) {
+    max-width: 450px;
+
     &:not(:last-child) {
       margin-bottom: 30px;
     }
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 354px;
+
+    &:nth-child(2n + 1) {
+      margin-right: 30px;
+    }
+
+    &:not(:nth-last-child(-n + 2)) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+
     &:not(:last-child) {
       margin-right: 30px;
     }
