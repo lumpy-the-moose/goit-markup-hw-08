@@ -1,8 +1,8 @@
 .hero {
   max-width: 1600px;
-  height: 600px;
+  height: 400px;
   margin: auto;
-  padding: 200px 0;
+  padding: 118px 0;
 
   background-color: $color-hero-background;
   background-image: linear-gradient($color-hero-overlay, $color-hero-overlay),
@@ -10,6 +10,11 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @media screen and (min-width: 1200px) {
+    height: 600px;
+    padding: 200px 0;
+  }
 
   &__container {
     display: flex;
@@ -19,22 +24,31 @@
   }
 
   &__title {
-    width: 696px;
+    max-width: 360px;
     margin-bottom: 30px;
 
     color: $color-white;
 
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.62;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    @media screen and (min-width: 1200px) {
+      max-width: 696px;
+
+      font-size: 44px;
+      line-height: 1.36;
+    }
   }
 
   &__button {
     @extend %button;
 
-    width: 216px;
+    @media screen and (min-width: 1200px) {
+      width: 216px;
+    }
   }
 }

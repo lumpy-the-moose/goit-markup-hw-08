@@ -2,16 +2,24 @@
   background-color: $color-secondary-background;
 
   &__title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
+    font-size: 28px;
+    line-height: 1.18;
     text-align: center;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 36px;
+      line-height: 1.17;
+      margin-bottom: 50px;
+    }
   }
 
   &__list {
-    display: flex;
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
   }
 
   &__box {
@@ -46,7 +54,9 @@
   box-shadow: 0px 1px 3px #0000001f, 0px 1px 1px #00000024, 0px 2px 1px #00000033;
   border-radius: 0px 0px 4px 4px;
 
-  &:not(:last-child) {
-    margin-right: 30px;
+  @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 }

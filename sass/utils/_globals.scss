@@ -7,13 +7,13 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
 
-  &.overflow-hidden {
-    overflow: hidden;
+  &::-webkit-scrollbar {
+    display: none;
   }
 }
 
-// *{
-//  outline: 1px solid coral;
+// * {
+//   outline: 1px solid coral;
 // }
 
 h1,
@@ -34,7 +34,11 @@ p {
 }
 
 .section {
-  padding: 94px 0;
+  padding: 60px 0;
+
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
 }
 
 .container {

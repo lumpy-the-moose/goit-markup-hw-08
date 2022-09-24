@@ -1,6 +1,10 @@
 .whatwedo {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+
   &__section {
-    padding-top: 0;
+    padding-bottom: 94px;
   }
 
   &__title {

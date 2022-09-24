@@ -1,5 +1,5 @@
 .contacts-footer {
-  width: 231px;
+  width: 232px;
   margin-top: 20px;
 
   font-style: normal;
@@ -11,6 +11,11 @@
 
 .contacts-footer__item {
   display: flex;
+  justify-content: center;
+
+  @media screen and (min-width: 1200px) {
+    justify-content: flex-start;
+  }
 
   &:not(:last-child) {
     margin-bottom: 9px;

@@ -1,15 +1,24 @@
 .clients {
   &__title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
+    font-size: 28px;
+    line-height: 1.18;
     text-align: center;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 36px;
+      line-height: 1.17;
+      margin-bottom: 50px;
+    }
   }
 
   &__list {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 30px;
   }
 
   &__icon {
@@ -18,14 +27,27 @@
 }
 
 .clients__item {
-  width: 170px;
+  @media screen and (max-width: 767px) {
+    &:nth-child(2n + 1) {
+      margin-right: 30px;
+    }
+  }
 
-  &:not(:last-child) {
-    margin-right: 30px;
+  @media screen and (min-width: 768px) {
+    &:not(:nth-child(3n + 3)) {
+      margin-right: 30px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 }
 
 .clients__icon-box {
+  width: 210px;
   height: 92px;
 
   color: $color-icon;
@@ -33,6 +55,14 @@
   border-radius: 4px;
 
   transition: color $duration $timing-function, border $duration $timing-function;
+
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
 
   &:hover,
   &:focus {
