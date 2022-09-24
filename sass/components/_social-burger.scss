@@ -1,0 +1,29 @@
+.social-burger {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  &__link {
+    display: flex;
+
+    color: $color-accent;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+  }
+}
+
+.social-burger__item {
+  &:not(:last-child) {
+    margin-right: 10px;
+    padding-right: 10px;
+
+    border-right: 1px solid $color-modal-border;
+  }
+}

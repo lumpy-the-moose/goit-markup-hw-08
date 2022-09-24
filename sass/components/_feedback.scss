@@ -45,6 +45,8 @@
 
     color: $color-secondary-text;
     line-height: 1.14;
+
+    user-select: none;
   }
 
   &__button {
