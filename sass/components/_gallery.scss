@@ -11,6 +11,11 @@
     overflow: hidden;
   }
 
+  &__image {
+    max-width: 100%;
+    height: auto;
+  }
+
   &__overlay {
     position: absolute;
     top: 0;
@@ -23,7 +28,7 @@
 
     background-color: $color-accent-op;
 
-    transform: translateY(100%);
+    transform: translateY(150%);
     transition: transform $duration $timing-function;
   }
 
