@@ -37,7 +37,7 @@
   &__overlay-text {
     color: $color-white;
 
-    font-size: 18px;
+    font-size: min(18px, 5vw);
     line-height: 1.56;
   }
 
