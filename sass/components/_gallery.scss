@@ -9,6 +9,8 @@
   &__thumb {
     position: relative;
     overflow: hidden;
+
+    max-height: 294px;
   }
 
   &__image {
@@ -84,6 +86,10 @@
 
     &:not(:nth-last-child(-n + 2)) {
       margin-bottom: 30px;
+    }
+
+    &:nth-child(-n + 2) .gallery__descr {
+      height: 146px;
     }
   }
 
